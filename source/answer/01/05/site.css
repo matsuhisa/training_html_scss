@@ -32,10 +32,17 @@ li {
   color: #3b4b5b;
 }
 
+/* 偶数の時 */
+li:nth-child(even) {
+  color: red;
+}
+
+/* 最初 */
 li:first-child{
   color: #2fc3a7;
 }
 
+/* 最後 */
 li:last-child{
   color: #baa06c;
 }
