@@ -28,8 +28,8 @@ open http://localhost:4567
 
 ## 実習01：HTMLとCSS
 
-- [ ] [HTMLを書く](/answer/01/04/01.html)
-- [ ] [CSS を書く](/answer/01/05/01.html)
+- [ ] [HTMLを書く](http://localhost:4567/answer/01/04/01.html)
+- [ ] [CSS を書く](http://localhost:4567/answer/01/05/01.html)
 
 ## 実習02：部品を作る
 
