@@ -37,10 +37,11 @@ open http://localhost:4567
 
 ## 実習03：部品を組み合わせる
 
-- [ ] [margin と padding](http://localhost:4567/answer/03/01/01.html)
-- [ ] [float](http://localhost:4567/answer/03/01/02.html)
-- [ ] [flex](http://localhost:4567/answer/03/01/03.html)
-- [ ] [table](http://localhost:4567/answer/03/01/04.html)
+- [ ] [margin と padding](http://localhost:4567/answer/03/01/02.html)
+- [ ] [float](http://localhost:4567/answer/03/01/03.html)
+- [ ] [flex](http://localhost:4567/answer/03/01/04.html)
+- [ ] [table](http://localhost:4567/answer/03/01/05.html)
+- [ ] [部品を組み合わせる](http://localhost:4567/answer/03/01/06.html)
 
 ## 実習04：テンプレートを作る
 
