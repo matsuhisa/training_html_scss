@@ -18,3 +18,8 @@
   margin: 10px;
   box-sizing: border-box;
 }
+
+.parent-box {
+  background-color: #dee4ea;
+  padding: 10px;
+}
