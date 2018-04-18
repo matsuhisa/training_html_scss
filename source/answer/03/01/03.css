@@ -1,13 +1,31 @@
-.flex-container {
-  display: flex;
+.cleafix {
+  overflow: hidden;
 }
 
-.flex-item {
-  border: 1px solid #cab68c;
-  background-color: #f9f7f2;
-  flex: 1;
+.main1 {
+
+  width: 50%;
+  float: left;
+  background-color: #dee4ea;
 }
 
-.flex-item:last-child {
-  flex: 2;
+.menu1 {
+  width: 50%;
+  float: left;
+  background-color: #e2d6bd;
+}
+
+.main2 {
+
+  width: 50%;
+  float: left;
+  background-color: #dee4ea;
+  border: 1px solid #8198ae;
+  /*box-sizing: border-box;*/
+}
+
+.menu2 {
+  width: 50%;
+  float: left;
+  background-color: #e2d6bd;
 }

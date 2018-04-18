@@ -4,22 +4,28 @@
     %meta{ charset: "UTF-8" }
     %meta{ name: "description", content: "実習用のサンプルコードです" }
     %meta{ name: "viewport", content: "width=1024" }
-    = stylesheet_link_tag "03"
+    = stylesheet_link_tag "02"
     %title 実習03のサンプル
   %body
-    %h1 flex のサンプルです
+    %h1 float
 
-    %ol
-      %li display:flex を用意する
-      %li dipslay:flex は、flex item を入れるコンテナ
-      %li flex item の高さが揃う
-      %li 並べ方にはいくつか種類がある。ここでは1つだけ紹介
+    %h2 floatの例1
 
-    .flex-container
-      .flex-item アイテム1
-      .flex-item アイテム2アイテム2
-      .flex-item
-        アイテム3
+    .cleafix
+      .main1 メイン1です
+      .menu1 メニュー1です
+
+    %h2 floatの例2
+
+    .cleafix
+      .main2 メイン2です
+      .menu2 メニュー2です
+
+    %h2 floatの例3
+
+    .cleafix
+      .main1
+        メイン1です
         %br
-        アイテム3
-      .flex-item アイテム4
+        メイン1です
+      .menu1 メニュー1です

@@ -1,31 +1,25 @@
-.cleafix {
-  overflow: hidden;
+.box1 {
+  display: block;
+  border: 10px solid #cab68c;
+  background-color: #f9f7f2;
+  width: 200px;
+  height: 200px;
+
+  margin: 10px;
 }
 
-.main1 {
+.box2 {
+  display: block;
+  border: 10px solid #cab68c;
+  background-color: #f9f7f2;
+  width: 200px;
+  height: 200px;
 
-  width: 50%;
-  float: left;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.parent-box {
   background-color: #dee4ea;
-}
-
-.menu1 {
-  width: 50%;
-  float: left;
-  background-color: #e2d6bd;
-}
-
-.main2 {
-
-  width: 50%;
-  float: left;
-  background-color: #dee4ea;
-  border: 1px solid #8198ae;
-  /*box-sizing: border-box;*/
-}
-
-.menu2 {
-  width: 50%;
-  float: left;
-  background-color: #e2d6bd;
+  padding: 10px;
 }
