@@ -33,14 +33,14 @@ open http://localhost:4567
 
 ## 実習02：部品を作る
 
-- [ ] 部品を作る
+- [ ] [部品を作る](http://localhost:4567/answer/02/01.html)
 
 ## 実習03：部品を組み合わせる
 
-- [ ] margin と padding
-- [ ] float
-- [ ] flex
-- [ ] table
+- [ ] [margin と padding](http://localhost:4567/answer/03/01/03.html)
+- [ ] [float](http://localhost:4567/answer/03/01/04.html)
+- [ ] [flex](http://localhost:4567/answer/03/01/05.html)
+- [ ] [table](http://localhost:4567/answer/03/01/06.html)
 
 ## 実習04：テンプレートを作る
 
