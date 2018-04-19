@@ -70,28 +70,48 @@
   margin-bottom: 10px;
 }
 
-.place .place-review-action {
-  font-size: 12px;
+.ribbon {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
   text-align: center;
+  padding: 0 20px 0 10px;
+  font-size: 12px;
+  background-color: #2fc3a7;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
-.place .place-review-action__icon {
-  font-size: 14px;
-  vertical-align: middle;
-  margin-left: 4px;
+.ribbon:after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: 0;
+
+  border-width: 10px 10px;
+  border-style: solid;
+  border-color: #2fc3a7;
+  border-right-color: #ffffff;
 }
 
-.place .place-review-action__label {
-  vertical-align: middle;
+.place .ribbon {
+  margin-left: -10px;
+  margin-bottom: 10px;
 }
 
-.place .place-review-action a{
-  text-decoration: none;
+.ribbon.m--rank1 {
+  background-color: #ff9933;
 }
 
-.place .place-review-action a:hover{
-  opacity: 0.7;
+.ribbon.m--rank1:after {
+  border-color: #ff9933;
+  border-right-color: #fff2e6;
 }
+
 /*
 
 下記は「部品を作る」で定義したclassです
@@ -123,13 +143,6 @@
   border: 1px solid #ffb2c5;
   color: #ffffff;
   background-color: #ff658b;
-}
-
-.button.post-review {
-  border: 1px solid #b0becc;
-  color: #3b4b5b;
-  font-weight: normal;
-  background: linear-gradient(#fff, #dee4ea);
 }
 
 .button.size-L {
