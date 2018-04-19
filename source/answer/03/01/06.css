@@ -70,7 +70,28 @@
   margin-bottom: 10px;
 }
 
+.place .place-review-action {
+  font-size: 12px;
+  text-align: center;
+}
 
+.place .place-review-action__icon {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.place .place-review-action__label {
+  vertical-align: middle;
+}
+
+.place .place-review-action a{
+  text-decoration: none;
+}
+
+.place .place-review-action a:hover{
+  opacity: 0.7;
+}
 /*
 
 下記は「部品を作る」で定義したclassです
@@ -102,6 +123,13 @@
   border: 1px solid #ffb2c5;
   color: #ffffff;
   background-color: #ff658b;
+}
+
+.button.post-review {
+  border: 1px solid #b0becc;
+  color: #3b4b5b;
+  font-weight: normal;
+  background: linear-gradient(#fff, #dee4ea);
 }
 
 .button.size-L {
