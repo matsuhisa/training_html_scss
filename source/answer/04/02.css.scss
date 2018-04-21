@@ -1,3 +1,4 @@
+@import "variable";
 @import "mixin";
 @import "place";
 
@@ -22,5 +23,5 @@
 }
 
 .ribbon {
-  @include ribbon($riboon-color: #ac8c4b, $background-color: #ffffff, $color: #ffffff);
+  @include ribbon($riboon-color: #ac8c4b, $background-color: $white, $color: $white);
 }

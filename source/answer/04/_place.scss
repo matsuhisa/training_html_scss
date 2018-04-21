@@ -1,10 +1,10 @@
 .place-name {
-  color: #2fc3a7;
+  color: $place-name-color;
   font-weight: bold;
 }
 
 .place-lead {
-  color: #3b4b5b;
+  color: $navy;
   line-height: 1.6;
 }
 
@@ -37,7 +37,7 @@
 
   .place-area {
     font-size: 12px;
-    color: #536a80;
+    color: $area-name-coor;
     margin-bottom: 10px;
 
     &__icon {
@@ -53,7 +53,7 @@
   .place-lead {
     font-size: 12px;
     line-height: 1.2;
-    color: #536a80;
+    color: $navy_1S;
     margin-bottom: 10px;
   }
 
@@ -62,10 +62,10 @@
     margin-left: -10px;
     margin-bottom: 10px;
     &.m--rank1 {
-      background-color: #ff9933;
+      background-color: $orange;
       &:after {
-        border-color: #ff9933;
-        border-right-color: #fff2e6;
+        border-color: $orange;
+        border-right-color: $orange_2S;
       }
     }
   }

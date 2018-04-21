@@ -1,4 +1,4 @@
-@mixin ribbon($riboon-color: #2fc3a7, $background-color: #ffffff, $color: #ffffff) {
+@mixin ribbon($riboon-color: $riboon-color, $background-color: $white , $color: $white ) {
   display: inline-block;
   position: relative;
   height: 20px;
