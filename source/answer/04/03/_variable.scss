@@ -1,6 +1,11 @@
 $white: #ffffff;
 
 $green: #2fc3a7 !default;
+$green_1S: lighten($green, 12%) !default;
+$green_2S: lighten($green, 24%) !default;
+$green_3S: lighten($green, 33%) !default;
+$green_4S: lighten($green, 42%) !default;
+$green_5S: lighten($green, 50%) !default;
 
 $navy: #3b4b5b;
 $navy_1S: lighten($navy, 12%) !default;

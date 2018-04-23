@@ -3,9 +3,9 @@
   font-weight: bold;
 }
 
-.place-score {
+@mixin place-score($base-font: 16px) {
   display: table;
-  font-size: 16px;
+  font-size: $base-font;
 
   &__point {
     color: $pink;
@@ -20,15 +20,19 @@
     &__star {
       color: $pink;
       display: inline-block;
-      font-size: 18px;
+      font-size: $base-font + 2;
     }
 
     &__star-half {
       color: $navy_2S;
       display: inline-block;
-      font-size: 18px;
+      font-size: $base-font + 2;
     }
   }
+}
+
+.place-score {
+  @include place-score;
 }
 
 .place-area {
