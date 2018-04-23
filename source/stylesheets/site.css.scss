@@ -1,0 +1,52 @@
+$white: #ffffff !default;
+$pink: #ff658b !default;
+$pink-1S: lighten($pink, 10%);
+$gray: #e7e7e7 !default;
+
+$review-color: $pink;
+$review-background-color: $pink-1S;
+
+%button {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &-large {
+    width: 200px;
+  }
+
+  &-shape {
+    border: 1px solid $gray;
+    padding: 10px;
+
+    &-review {
+      @extend %button-shape;
+      border-radius: 8px;
+    }
+  }
+}
+
+%button-color-review {
+  background-color: $review-background-color;
+  color: $white;
+}
+
+.button {
+  @extend %button;
+  @extend %button-shape;
+}
+
+%button-review {
+  @extend %button;
+  @extend %button-shape-review;
+  @extend %button-color-review;
+}
+
+.button-review {
+  @extend %button-review;
+
+  &-large {
+    @extend %button-review;
+    @extend %button-large;
+  }
+}
