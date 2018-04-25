@@ -1,8 +1,52 @@
 !!! 5
-%html
+%html{ lang: 'ja' }
   %head
-    = stylesheet_link_tag "site"
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: 'viewport', content: 'width=1024' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag 'site'
+    %title HTML/CSS 研修
   %body
-    .button 投稿する
-    .button-review 投稿する
-    .button-review-large 投稿する
+
+    %h1 サンプルコード
+
+    %h2 実習01：HTMLとCSS
+    %ul
+      %li
+        %a{href: "/answer/01/04/01.html"} HTMLを書く
+      %li
+        %a{href: "/answer/01/05/01.html"} CSSを書く
+
+    %h2 実習02：部品を作る
+    %ul
+      %li
+        %a{href: "/answer/02/haml_01.html"} 部品を作る
+
+    %h2 実習03：部品を組み合わせる
+    %ul
+      %li
+        %a{href: "/answer/03/01/haml_02.html"} margin と padding
+      %li
+        %a{href: "/answer/03/01/haml_03.html"} float
+      %li
+        %a{href: "/answer/03/01/haml_04.html"} flex
+      %li
+        %a{href: "/answer/03/01/haml_05.html"} table
+      %li
+        %a{href: "/answer/03/01/haml_06.html"} 部品を組み合わせる
+
+
+    %h2 実習04：テンプレートを作る
+    %ul
+      %li
+        %a{href: "/answer/04/02/index_haml.html"} SCSS
+      %li
+        %a{href: "/answer/04/02/index_haml.html"} リファクタリング
+
+    %h2 実習05：hamlについて
+
+    %h2 実習06：テンプレート
+    %ul
+      %li
+        %a{href: "/answer/04/03/index_haml.html"} テンプレート
