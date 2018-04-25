@@ -154,15 +154,36 @@ body {
       }
 
       &__thumbnails {
-        img {
-          display: inline;
+        span {
+          display: inline-block;
           width: 75px;
+          height: 75px;
           margin-right: 5px;
         }
-        img:last-child{
+        span:nth-child(3) {
           margin-right: 0;
+          position: relative;
+          img {
+            filter:brightness(0.5);
+          }
         }
+      }
+      &__more {
 
+        color: $white;
+        display: inline-block;
+        font-size: 10px;
+        top: 20px;
+        left: 0;
+        position: absolute;
+        margin: auto;
+        width: 75px;
+        text-align: center;
+        line-height: 2;
+        .material-icons {
+          filter:brightness(0.9);
+          font-size: 28px;
+        }
       }
     }
 
