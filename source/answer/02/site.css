@@ -34,7 +34,6 @@ h2 {
   height: 20px;
   line-height: 20px;
   vertical-align: middle;
-  /* text-align: center; */
   padding: 0 10px 0 10px;
   font-size: 12px;
   background-color: #2fc3a7;
@@ -55,23 +54,7 @@ h2 {
   border-color: transparent;
   border-top-color: #2fc3a7;
   border-bottom-color: #2fc3a7;
-  /* border-color: #2fc3a7;
-  border-right-color: #ffffff; */
 }
-
-/* .ribbon:after {
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  right: 0;
-
-  border-width: 10px 10px;
-  border-style: solid;
-  border-color: #2fc3a7;
-  border-right-color: #ffffff;
-} */
 
 /* 丸 */
 .circle-icon {

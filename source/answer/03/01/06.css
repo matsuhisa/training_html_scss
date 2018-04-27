@@ -76,26 +76,26 @@
   height: 20px;
   line-height: 20px;
   vertical-align: middle;
-  text-align: center;
-  padding: 0 20px 0 10px;
+  padding: 0 10px 0 10px;
   font-size: 12px;
   background-color: #2fc3a7;
   color: #ffffff;
   box-sizing: border-box;
 }
 
-.ribbon:after {
+.ribbon::after {
   content: '';
   position: absolute;
   width: 0px;
   height: 0px;
   top: 0;
-  right: 0;
+  right: -10px;
 
-  border-width: 10px 10px;
   border-style: solid;
-  border-color: #2fc3a7;
-  border-right-color: #ffffff;
+  border-width: 10px;
+  border-color: transparent;
+  border-top-color: #2fc3a7;
+  border-bottom-color: #2fc3a7;
 }
 
 .place .ribbon {

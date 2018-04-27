@@ -11,17 +11,19 @@
 
   .place {
     border-bottom: 1px solid #c6ae7d;
+
     &:first-child {
-      border-radius: 8px 8px 0 0;
       background-color: #fff2e6;
+      border-radius: 8px 8px 0 0;
     }
+
     &:last-child {
-      border: none;
+      border: 0;
       margin-bottom: 0;
     }
   }
 }
 
 .ribbon {
-  @include ribbon($riboon-color: #ac8c4b, $background-color: $white, $color: $white);
+  @include ribbon($riboon-color: #ac8c4b);
 }
