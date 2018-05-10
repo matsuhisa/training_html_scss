@@ -3,7 +3,6 @@
 }
 
 .main1 {
-
   width: 50%;
   float: left;
   background-color: #dee4ea;
@@ -21,7 +20,7 @@
   float: left;
   background-color: #dee4ea;
   border: 1px solid #8198ae;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 .menu2 {

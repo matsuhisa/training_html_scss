@@ -1,0 +1,27 @@
+.place {
+  width: 600px;
+}
+
+.place h2 {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.place-name {
+  color: #2fc3a7;
+}
+
+.place-information {
+  float: left;
+  width: 390px;
+  padding-right: 10px;
+}
+
+.area-name {
+  margin-bottom: 10px;
+}
+
+.place-image {
+  float: left;
+  width: 200px;
+}

@@ -15,7 +15,7 @@ header {
 }
 
 /* 子要素 */
-.title span{
+.title span {
   display: block;
   font-size: 12px;
   color: #b0becc;
@@ -23,7 +23,7 @@ header {
 }
 
 /* 疑似要素：Pseudo-elements */
-header:hover{
+header:hover {
   color: #ffffff;
   background-color: #baa06c;
 }
@@ -33,16 +33,16 @@ li {
 }
 
 /* 偶数の時 */
-li:nth-child(even) {
-  color: red;
+li:nth-child(even) a {
+  color: blue;
 }
 
 /* 最初 */
-li:first-child{
+li:first-child {
   color: #2fc3a7;
 }
 
 /* 最後 */
-li:last-child{
+li:last-child {
   color: #baa06c;
 }
