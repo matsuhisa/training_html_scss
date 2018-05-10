@@ -1,5 +1,65 @@
 $green: #2fc3a7;
+$white: #ffffff;
+$gold: #ac8c4b;
+$riboon-color: #336699;
+$place-name-color: $green;
 
-.foo {
-  color: $green;
+@mixin ribbon($riboon-color: $riboon-color, $font-color: $white ) {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: 12px;
+  background-color: $riboon-color;
+  color: $font-color;
+  box-sizing: border-box;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -10px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-top-color: $riboon-color;
+    border-bottom-color: $riboon-color;
+  }
+}
+
+.area-name {
+  margin-bottom: 10px;
+}
+
+.ribbon {
+  @include ribbon($font-color: $gold);
+}
+
+.place-name {
+  color: $place-name-color;
+}
+
+.place {
+  width: 600px;
+
+  &__information {
+    float: left;
+    width: 390px;
+    padding-right: 10px;
+  }
+
+  &__image {
+    float: left;
+    width: 200px;
+  }
+}
+
+.place h2 {
+  margin: 0 0 10px;
+  padding: 0;
 }
