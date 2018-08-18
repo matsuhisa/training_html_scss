@@ -13,10 +13,6 @@ img.circle {
   transform: rotate($rotate);
 }
 
-.arrow {
-  @include arrow($size: 12px);
-}
-
 .list-article {
 }
 
