@@ -1,0 +1,144 @@
+img.circle {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@mixin arrow($size: 6px, $color: #2fc3a7, $border-width: 2px, $rotate: 45deg) {
+  width: $size;
+  height: $size;
+  border-top: solid $border-width $color;
+  border-right: solid $border-width $color;
+  -webkit-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+
+.arrow {
+  @include arrow($size: 12px);
+}
+
+.list-article {
+}
+
+.list-article-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &>div {
+    margin-bottom: 0;
+    flex-basis: calc(100% - (12px + 20px));
+  }
+
+  &:after {
+    content: "";
+    @include arrow($size: 12px);
+  }
+}
+
+// -------------
+
+.global-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-navigation-logo {
+}
+
+.global-navigation-links {
+  &__item {
+    margin-left: 10px;
+  }
+}
+
+// -------------
+.articles {
+  margin-bottom: 40px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &__body {
+    flex: 0 2 calc(100% - (100px + 10px));
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__image {
+    img {
+      width: 100px;
+    }
+  }
+}
+
+// -------------
+
+.topic-articles {
+  margin-bottom: 40px;
+}
+
+.topic-article {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  &__body {
+    color: #666;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
+
+.topic-article-image {
+  img {
+    width: 100px;
+  }
+}
+
+.topic-article-info {
+  flex: 0 2 calc(100% - (100px + 10px));
+}
+
+.topic-article-user {
+  display: flex;
+  align-items: center;
+}
+
+.topic-article-user-thumbnail {
+  margin-right: 10px;
+}
+
+.topic-article-user-profile {
+  display: flex;
+  flex-direction: column;
+
+  &__nickname {
+    color: #ac8c4b;
+  }
+  &__postdate {
+    color: #b0becc;
+    font-size: 12px;
+  }
+}
