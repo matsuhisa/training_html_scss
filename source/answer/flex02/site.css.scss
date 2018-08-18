@@ -13,6 +13,8 @@ img.circle {
   transform: rotate($rotate);
 }
 
+// -------------
+
 .list-article {
 }
 
@@ -37,6 +39,37 @@ img.circle {
   &:after {
     content: "";
     @include arrow($size: 12px);
+  }
+}
+
+// -------------
+
+.card-articles {
+  display: flex;
+  margin-left: -10px;
+}
+
+.card-article {
+  width: 33%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__image {
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  &__body {
+    margin-bottom: 10px;
+  }
+  &__user {
+    margin-top: auto;
+    margin-left: auto;
   }
 }
 
