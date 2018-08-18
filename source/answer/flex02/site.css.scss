@@ -21,9 +21,17 @@ img.circle {
   justify-content: space-between;
   align-items: center;
 
+  background-color: #f9f7f2;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e2d6bd;
+
+  &:first-child {
+    border-top: 1px solid #e2d6bd;
+  }
+
   &>div {
     margin-bottom: 0;
-    flex-basis: calc(100% - (12px + 20px));
+    flex-basis: calc(100% - (12px + 10px));
   }
 
   &:after {
