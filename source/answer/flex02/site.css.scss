@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
 img.circle {
   min-width: 30px;
   height: 30px;
@@ -32,7 +37,6 @@ img.circle {
   }
 
   &>div {
-    margin-bottom: 0;
     flex-basis: calc(100% - (12px + 10px));
   }
 
@@ -47,15 +51,22 @@ img.circle {
 .card-articles {
   display: flex;
   margin-left: -10px;
+
+  &>.card-article {
+    width: calc( 100% / 3 );
+    margin-left: 10px;
+    &:nth-child(even) {
+      background-color: #f9f7f2;
+    }
+  }
 }
 
 .card-article {
-  width: 33%;
-  margin-left: 10px;
   display: flex;
   flex-direction: column;
 
   &__title {
+    margin-top: 0px;
     margin-bottom: 10px;
   }
   &__image {
@@ -70,6 +81,7 @@ img.circle {
   &__user {
     margin-top: auto;
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -93,12 +105,14 @@ img.circle {
 // -------------
 .articles {
   margin-bottom: 40px;
+  &>.article {
+    margin-bottom: 20px;
+  }
 }
 
 .article {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
@@ -121,13 +135,15 @@ img.circle {
 
 .topic-articles {
   margin-bottom: 40px;
+  &>.topic-article {
+    margin-bottom: 20px;
+  }
 }
 
 .topic-article {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
 
   font-size: 14px;
 
