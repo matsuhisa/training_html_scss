@@ -120,7 +120,8 @@ img.circle {
   }
 
   &__body {
-    flex: 0 2 calc(100% - (100px + 10px));
+    width: calc(100% - (100px + 10px));
+    // flex: 0 2 calc(100% - (100px + 10px));
     font-size: 14px;
     line-height: 1.2;
   }
@@ -172,7 +173,8 @@ img.circle {
 }
 
 .topic-article-info {
-  flex: 0 2 calc(100% - (100px + 10px));
+  width: calc(100% - (100px + 10px));
+  // flex: 0 2 calc(100% - (100px + 10px));
 }
 
 .topic-article-user {
