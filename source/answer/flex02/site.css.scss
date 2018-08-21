@@ -71,6 +71,7 @@ img.circle {
   }
   &__image {
     margin-bottom: 10px;
+    min-height: 0%;  // IE 11 の対応
     img {
       width: 100%;
     }
